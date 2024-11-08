@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royals Walk - Buy the latest limited edition sneakers and streetwear.">
+    <meta name="author" content="Team 3">
+    <meta name="keywords" content="sneakers, streetwear, limited edition, buy sneakers, sneaker marketplace">
+    <title>Royals Walk - Sneaker Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Royals Walk</h1>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cart">
+                    <span>Cart (<span id="cart-count">0</span>)</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <main>
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <h2>Featured Sneakers</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product" data-id="1">
+                    <img src="/Frontend/imagenes/sneaker1.jpg.png" alt="Nike Air Max 97">
+                    <h3>Nike Air Max 97</h3>
+                    <p>$180</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product" data-id="2">
+                    <img src="/Frontend/imagenes/sneaker2.jpg.png" alt="Adidas Yeezy Boost 350">
+                    <h3>Adidas Yeezy Boost 350</h3>
+                    <p>$220</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product" data-id="3">
+                    <img src="/Frontend/imagenes/sneaker3.jpg.png" alt="Jordan 1 Retro High">
+                    <h3>Jordan 1 Retro High</h3>
+                    <p>$190</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product" data-id="4">
+                    <img src="/Frontend/imagenes/sneaker4.jpg.png" alt="Puma RS-X">
+                    <h3>Puma RS-X</h3>
+                    <p>$150</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 5 -->
+                <div class="product" data-id="5">
+                    <img src="/Frontend/imagenes/sneaker5.jpg.png" alt="New Balance 990v5">
+                    <h3>New Balance 990v5</h3>
+                    <p>$175</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Product 6 -->
+                <div class="product" data-id="6">
+                    <img src="/Frontend/imagenes/sneaker6.jpg.png" alt="Reebok Classic Leather">
+                    <h3>Reebok Classic Leather</h3>
+                    <p>$80</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product" data-id="7">
+                    <img src="/Frontend/imagenes/sneaker7.jpg.png" alt="Jordan Dior">
+                    <h3>Nike Air Max 97</h3>
+                    <p>$180</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+ 
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart-section" class="cart-section">
+            <div class="cart-items-container">
+                <h2>Shopping Cart</h2>
+                <div id="cart-items" class="cart-items">
+                    <p>No items in the cart.</p>
+                </div>
+                <button id="clear-cart" class="clear-cart">Clear Cart</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Royals Walk</h2>
+            <p class="about-description"></p>
+                Royals Walk es un proyecto de página web fullstack diseñado para ser desplegado en AWS. Somos parte del grupo de arquitectura en la nube. El proyecto incluye tanto el frontend como el backend, utilizando tecnologías modernas para crear una aplicación robusta y escalable. Además, Royals Walk es un proyecto sustentable, enfocado en minimizar el impacto ambiental mediante el uso de prácticas de desarrollo sostenible y la implementación de soluciones eficientes en el uso de recursos.
+            </p>
+            <h3>Características del Proyecto:</h3>
+            <ul class="features-list"></ul>
+                <li><strong>Despliegue en AWS</strong>: Utilizamos los servicios de AWS para asegurar una infraestructura escalable y de alta disponibilidad.</li>
+                <li><strong>Tecnologías Modernas</strong>: Empleamos tecnologías de vanguardia tanto en el frontend como en el backend para ofrecer una experiencia de usuario óptima.</li>
+                <li><strong>Sustentabilidad</strong>: Implementamos prácticas de desarrollo sostenible para reducir el impacto ambiental.</li>
+                <li><strong>Arquitectura en la Nube</strong>: Diseñamos la arquitectura del proyecto para aprovechar al máximo las ventajas de la computación en la nube.</li>
+                <li><strong>Seguridad</strong>: Incorporamos medidas de seguridad avanzadas para proteger los datos y la privacidad de los usuarios.</li>
+                <li><strong>Escalabilidad</strong>: La aplicación está diseñada para crecer y adaptarse a las necesidades cambiantes del negocio.</li>
+            </ul>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Royals Walk. All rights reserved.</p>
+    </footer>
+
+    <script src="spam.js"></script>
+</body>
+</html>
